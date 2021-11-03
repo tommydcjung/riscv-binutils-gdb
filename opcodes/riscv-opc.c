@@ -496,6 +496,7 @@ const struct riscv_opcode riscv_opcodes[] =
 {"remuw",    64, {"M", 0}, "d,s,t",  MATCH_REMUW, MASK_REMUW, match_opcode, 0 },
 
 /* Single-precision floating-point instruction subset */
+{"flwadd",   32, {"F", 0},   "D,s,t", MATCH_FLWADD, MASK_FLWADD, match_opcode, 0},
 {"frcsr",     0, {"F", 0},   "d",  MATCH_FRCSR, MASK_FRCSR, match_opcode, INSN_ALIAS },
 {"frsr",      0, {"F", 0},   "d",  MATCH_FRCSR, MASK_FRCSR, match_opcode, INSN_ALIAS },
 {"fscsr",     0, {"F", 0},   "s",  MATCH_FSCSR, MASK_FSCSR | MASK_RD, match_opcode, INSN_ALIAS },
